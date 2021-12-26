@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{683AAAF6-E7E3-46C8-BD40-2EE66196D7AC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjeDonem1_DOTNET_</RootNamespace>
+    <AssemblyName>ProjeDonem1%28DOTNET%29</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adres.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdresEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdresEkle.Designer.cs">
+      <DependentUpon>frmAdresEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalisanAnaEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalisanAnaEkrani.Designer.cs">
+      <DependentUpon>frmCalisanAnaEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalisanGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalisanGirisEkrani.Designer.cs">
+      <DependentUpon>frmCalisanGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalisanSecim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalisanSecim.Designer.cs">
+      <DependentUpon>frmCalisanSecim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKapidaOdeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKapidaOdeme.Designer.cs">
+      <DependentUpon>frmKapidaOdeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKrediKartiEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKrediKartiEkleme.Designer.cs">
+      <DependentUpon>frmKrediKartiEkleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKullaniciBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKullaniciBilgileri.Designer.cs">
+      <DependentUpon>frmKullaniciBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriGirisEkrani.Designer.cs">
+      <DependentUpon>frmMusteriGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriKayitEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriKayitEkrani.Designer.cs">
+      <DependentUpon>frmMusteriKayitEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriTakip.Designer.cs">
+      <DependentUpon>frmMusteriTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOdemeEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdemeEkrani.Designer.cs">
+      <DependentUpon>frmOdemeEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOdemeYontemi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdemeYontemi.Designer.cs">
+      <DependentUpon>frmOdemeYontemi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSepetim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSepetim.Designer.cs">
+      <DependentUpon>frmSepetim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSiparislerim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSiparislerim.Designer.cs">
+      <DependentUpon>frmSiparislerim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSipraisAnaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSipraisAnaEkran.Designer.cs">
+      <DependentUpon>frmSipraisAnaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KrediKarti.cs" />
+    <Compile Include="Musteri.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Proje_Donem1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Proje_Donem1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Proje_Donem1DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Proje_Donem1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Proje_Donem1DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Proje_Donem1DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Proje_Donem1DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Proje_Donem1DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Proje_Donem1DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Proje_Donem1DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem.cs" />
+    <Compile Include="Urun.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdresEkle.resx">
+      <DependentUpon>frmAdresEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalisanAnaEkrani.resx">
+      <DependentUpon>frmCalisanAnaEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalisanGirisEkrani.resx">
+      <DependentUpon>frmCalisanGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalisanSecim.resx">
+      <DependentUpon>frmCalisanSecim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKapidaOdeme.resx">
+      <DependentUpon>frmKapidaOdeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKrediKartiEkleme.resx">
+      <DependentUpon>frmKrediKartiEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKullaniciBilgileri.resx">
+      <DependentUpon>frmKullaniciBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriGirisEkrani.resx">
+      <DependentUpon>frmMusteriGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriKayitEkrani.resx">
+      <DependentUpon>frmMusteriKayitEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriTakip.resx">
+      <DependentUpon>frmMusteriTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdemeEkrani.resx">
+      <DependentUpon>frmOdemeEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdemeYontemi.resx">
+      <DependentUpon>frmOdemeYontemi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSepetim.resx">
+      <DependentUpon>frmSepetim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSiparislerim.resx">
+      <DependentUpon>frmSiparislerim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSipraisAnaEkran.resx">
+      <DependentUpon>frmSipraisAnaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Proje_Donem1DataSet.xsc">
+      <DependentUpon>Proje_Donem1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Proje_Donem1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Proje_Donem1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Proje_Donem1DataSet.xss">
+      <DependentUpon>Proje_Donem1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Proje_Donem1DataSet1.xsc">
+      <DependentUpon>Proje_Donem1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Proje_Donem1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Proje_Donem1DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Proje_Donem1DataSet1.xss">
+      <DependentUpon>Proje_Donem1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Proje_Donem1DataSet2.xsc">
+      <DependentUpon>Proje_Donem1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Proje_Donem1DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Proje_Donem1DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Proje_Donem1DataSet2.xss">
+      <DependentUpon>Proje_Donem1DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Proje_Donem1DataSet3.xsc">
+      <DependentUpon>Proje_Donem1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Proje_Donem1DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Proje_Donem1DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Proje_Donem1DataSet3.xss">
+      <DependentUpon>Proje_Donem1DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Proje_Donem1DataSet4.xsc">
+      <DependentUpon>Proje_Donem1DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Proje_Donem1DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Proje_Donem1DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Proje_Donem1DataSet4.xss">
+      <DependentUpon>Proje_Donem1DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\creditcarticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashondelivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
